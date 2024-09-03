@@ -1,0 +1,146 @@
+/* Estilos para os textos da pagina e Titulos */
+
+section > h2 {
+    color: #3633F2;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text {
+    width: 80vw;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+section > .text > p {
+    padding: 5px;
+    text-align: justify;
+}
+
+i {
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+.listImages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 40px 50px;
+}
+
+.climaBox, .cordelBox, .loginBox, .snakeBox {
+    text-align: justify;
+    width: 20vw;
+}
+
+.cordelBox > a > img {
+    height: 20vh;
+}
+
+.snakeBox > a > img {
+    width: 20vw;
+}
+
+img {
+    width: 20vw;
+    border-radius: 30px;
+}
+
+.link_final {
+    color: #3633F2;
+    font-weight: bold;
+}
+
+/* Estilos para Tablets (largura entre 601px e 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    section {
+    margin-top: 200px;
+
+    }
+
+    section > h2 {
+        margin-top: 15px;
+        margin-bottom: 8px;
+    }
+
+    .text {
+        width: 90vw;
+        font-size: 1.1em;
+        margin-bottom: 20px;
+    }
+
+    section > .text > p {
+        padding: 8px;
+    }
+
+    i {
+        font-size: 25px;
+        padding-right: 8px;
+    }
+
+    .listImages {
+        margin: 30px 40px;
+    }
+
+    .climaBox, .cordelBox, .loginBox, .snakeBox {
+        width: 25vw;
+    }
+
+    .cordelBox > a > img, .snakeBox > a > img, img {
+        width: 25vw;
+    }
+}
+
+/* Estilos para Mobile (largura até 600px) */
+@media (max-width: 600px) {
+
+    section {
+        
+        margin: 200px auto;
+    
+        }
+    section > h2 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .text {
+        width: 95vw;
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+
+    section > .text > p {
+        padding: 5px;
+    }
+
+    i {
+        font-size: 20px;
+        padding-right: 5px;
+    }
+
+    .listImages {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        margin: 20px 10px;
+    }
+
+    .climaBox, .cordelBox, .loginBox, .snakeBox {
+        width: 80vw;
+        padding: 20px;
+    }
+
+    .cordelBox > a > img, .snakeBox > a > img, img {
+        width: 80vw;
+        height: auto;
+    }
+}

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+/*Aqui sera criado alguns estilos gerais para as telas*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "SUSE", sans-serif ;
+}
+
+body {
+    background-color: rgb(218, 226, 255);
+}
+
+/*Estilos para a barra de menu*/
+
+header{
+    background-color: #33A9F2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    z-index: 1000; 
+}
+
+/*Aqui sera criado alguns estilos gerais para as telas*/
+
+header h2 > a{
+    color: white;
+    font-size: 1.8em;
+}
+
+.listaMenu > ul {
+    display: flex;
+    justify-content: center;
+}
+
+.listaMenu > ul > li {
+    padding: 0 10%;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Quando o usuario passar o mouse pelo link, o mesmo mudara de cor */
+
+header > h2 > a:hover, header > .listaMenu > ul > li > a:hover {
+    color: #3633F2;
+}
+
+/* Estilos para Tablets (largura entre 601px e 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header h2 > a {
+        font-size: 1.5em;
+    }
+
+    .listaMenu > ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .listaMenu > ul > li {
+        padding: 5% 0;
+        font-size: 1.2em;
+    }
+}
+
+/* Estilos para Mobile (largura até 600px) */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    header h2 > a {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .listaMenu > ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .listaMenu > ul > li {
+        padding: 5% 0;
+        font-size: 1em;
+    }
+}

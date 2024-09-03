@@ -1,0 +1,107 @@
+/* Estilos para os textos da pagina e Titulos */
+
+
+section > h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #3633F2;
+}
+
+section > h2 {
+    color: #3633F2;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 200px;
+
+}
+
+.text {
+    width: 80vw;
+    font-size: 1.2em;
+}
+
+section > .text > p {
+    padding: 5px;
+    text-align: justify;
+}
+
+i {
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+
+
+/* Estilos para Tablets (largura entre 601px e 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    section{
+    margin: 200px;
+
+    }
+
+    section > h1 {
+        font-size: 1.8em;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    section > h2 {
+        margin-top: 15px;
+        margin-bottom: 8px;
+        padding: 10px;
+    }
+
+    .text {
+        width: 90vw;
+        font-size: 1.1em;
+    }
+
+    section > .text > p {
+        padding: 8px;
+    }
+
+    i {
+        font-size: 25px;
+        padding-right: 8px;
+    }
+}
+
+/* Estilos para Mobile (largura até 600px) */
+@media (max-width: 600px) {
+    section > h1 {
+        font-size: 1.5em;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    section > h2 {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        padding: 10px;
+
+    }
+
+    .text {
+        width: 95vw;
+        font-size: 1em;
+    }
+
+    section > .text > p {
+        padding: 5px;
+    }
+
+    i {
+        font-size: 20px;
+        padding-right: 5px;
+    }
+}
